@@ -7,7 +7,7 @@ function setDate() {
     // get the current Date - Wed Apr 05 2017 21:37:08 GMT+1000 (AEST)
     const now = new Date();
     const seconds = now.getSeconds();
-    // calculate and degree and offsets 90 degrees
+    // calculate the second degree and offsets 90 degrees
     const secondDegrees = ((seconds / 60) * 360) + 90;
     secondHand.style.transform = `rotate(${secondDegrees}deg)`;
 
