@@ -9,7 +9,7 @@ function handleUpdate(input){
         const suffix = input.dataset.sizing || '';
         // update the CSS variables
         // document.documentElement returns root element of the document
-        document.documentElement.style.setProperty(`--${input.name}`, input.value + suffix);
+        document.documentElement.style.setProperty(`--${input.name}`, `${input.value}${suffix}`);
     }
 }
 
