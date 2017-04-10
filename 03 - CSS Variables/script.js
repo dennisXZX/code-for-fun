@@ -1,10 +1,10 @@
 // retrieve all the input DOM elements
 const inputs = document.querySelectorAll('.controls input');
-// set a flag to control event trigger
-let flag = false;
+// define a functio property to control event trigger
+handleUpdate.flag = false;
 
 function handleUpdate(input){
-    if(flag) {
+    if(handleUpdate.flag) {
         // retrieve the suffix from data property
         const suffix = input.dataset.sizing || '';
         // update the CSS variables
@@ -16,15 +16,15 @@ function handleUpdate(input){
 // iterate through all input elements and register event listeners for them
 inputs.forEach((input) => {
     input.addEventListener('mousedown', () => {
-        flag = true;
+        handleUpdate.flag = true;
         handleUpdate(input);
     });
     input.addEventListener('change', () => {
-        flag = true;
+        handleUpdate.flag = true;
         handleUpdate(input);
     });
     input.addEventListener('mouseup', () => {
-        flag = false;
+        handleUpdate.flag = false;
         handleUpdate(input);
     });
 });
