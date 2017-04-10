@@ -31,3 +31,18 @@ input.addEventListener('mousedown', () => { // wrap it in an anonymous function
     handleUpdate(input);
 });
 ```
+4. Use a function property as a flag to keep track of event triggering
+```
+// a function property is created to control event triggering
+handleUpdate.flag = false;
+
+function handleUpdate(input){
+    if(handleUpdate.flag) {
+        // retrieve the suffix from data property
+        const suffix = input.dataset.sizing || '';
+        // update the CSS variables
+        // document.documentElement returns root element of the document
+        document.documentElement.style.setProperty(`--${input.name}`, `${input.value}${suffix}`);
+    }
+}
+```
