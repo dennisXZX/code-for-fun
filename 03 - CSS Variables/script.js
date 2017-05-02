@@ -1,6 +1,6 @@
 // retrieve all the input DOM elements
 const inputs = document.querySelectorAll('.controls input');
-// define a functio property to control event trigger
+// define a function property to control event trigger
 handleUpdate.flag = false;
 
 function handleUpdate(input){

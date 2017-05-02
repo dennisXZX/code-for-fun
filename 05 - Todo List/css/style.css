@@ -1,0 +1,4 @@
+li {
+	float: left;
+	clear: both; /* remove this if you want them flowing inline */
+}
