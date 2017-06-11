@@ -6,10 +6,10 @@ const balls = document.getElementsByClassName('ball');
 Array.prototype.forEach.call(balls, (ball) => {
   document.addEventListener('click', (event) => {
     const randomOffset = Math.floor(Math.random() * 300);
-    ball.style.transform = 'translateY(' + (event.clientY - randomOffset)+ 'px)';
-    ball.style.transform += 'translateX(' + (event.clientX - randomOffset)+ 'px)';
-  }, false);
-}, this);
+    ball.style.transform = 'translateY(' + (event.clientY - randomOffset) + 'px)';
+    ball.style.transform += 'translateX(' + (event.clientX - randomOffset) + 'px)';
+  });
+});
 
 
 
