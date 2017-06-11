@@ -20,7 +20,7 @@ let todoList = {
     toogleAll: function() {
         const that = this;
         // helper method
-        function hasCompletedAllItems (){ // helper method
+        function hasCompletedAllItems (){
             let hasCompletedAllItems = true;
             // iterate through to check if all todo item are completed
             for (let i = 0; i < that.todos.length; i++) {

@@ -8,7 +8,7 @@ arr.reduce(callback, [initialValue])
 
 The callback takes four parameters (accumulator, currentValue, currentIndex and array). The accumulator and currentValue parameters are a bit tricky as their values vary depending on whether an initialValue is present. The first time the callback is called, accumulator and currentValue can be one of two values. If initialValue is provided in the call to reduce, then accumulator will be equal to initialValue, and currentValue will be equal to the first value in the array. If no initialValue is provided, then accumulator will be equal to the first value in the array, and currentValue will be equal to the second.
 
-Examine the excerise 8 to understand how reduce works. 
+Examine the excerise 8 in the code to understand how reduce works. 
 ```
 // pass an empty object as an accumulator
 const transportation = data.reduce((obj, item) => {
